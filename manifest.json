@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Google Meet Mute Controller",
+  "version": "1.0",
+  "description": "ショートカットキーでGoogle Meetのミュート操作を行える拡張機能",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Google Meet Mute Controller - クリックして設定を開く",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "commands": {
+    "toggle-mute": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+M"
+      },
+      "description": "ミュート/ミュート解除を切り替え"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "google-meet-mute",
+  "version": "1.0.0",
+  "description": "Google Meetでショートカットキーを使ってミュート/ミュート解除を行えるChrome拡張機能です。",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "canvas": "^3.2.0"
+  }
+}
