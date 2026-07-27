@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Google Meet Mute Controller",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "ショートカットキーでGoogle Meetのミュート操作を行える拡張機能",
   "permissions": [
     "storage",
